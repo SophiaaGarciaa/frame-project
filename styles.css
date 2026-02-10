@@ -72,6 +72,12 @@ a {
    display: inline-block;
    width: 10%;
    background-color: #cdea68;
+   text-decoration: none;
+   color: #1a1a1a;
+   padding: 8px 16px;
+   font-weight: 600;
+   font-size: 0.85rem;
+   border-radius: 20px;
 }
 
 
