@@ -14,3 +14,8 @@ MC317450-152-LE:frame-project omareikr$ git commit -m "Initial Commit"
  create mode 100644 index.html
  create mode 100644 styles.css
 MC317450-152-LE:frame-project omareikr$ 
+
+gitinit
+git add .
+git commit -m "Initial Commit"
+git push
