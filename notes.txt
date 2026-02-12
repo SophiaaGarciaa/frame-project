@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 MC317450-152-LE:frame-project omareikr$ clear
 MC317450-152-LE:frame-project omareikr$ git init
 Initialized empty Git repository in /Users/omareikr/Desktop/week4/frame-project/.git/
@@ -24,5 +25,7 @@ git init
 git add .
 git commit -m "Initial Commit"
 git push
+
+## Working again on the same prject
 git remote -v
 gitadd .
