@@ -19,3 +19,10 @@ gitinit
 git add .
 git commit -m "Initial Commit"
 git push
+=======
+git init
+git add .
+git commit -m "Initial Commit"
+git push
+git remote -v
+gitadd .
