@@ -27,6 +27,11 @@ a {
    color: inherit;
 }
 
+img{
+   max-width: 100%;
+   height: auto;
+   display: block;
+}
 /* ==============================================
    HEADER AREA
    ============================================== */
@@ -114,6 +119,7 @@ a {
       position: relative;
       width: 55%;
       z-index: 2;
+      vertical-align: middle;
    }
 
    .hero-section .hero-image-wrapper {
@@ -121,6 +127,28 @@ a {
       position: relative;
       width: 40%;
       z-index: 2;
+      vertical-align: middle;
+      margin-left: 3w;
+   }
+
+   .hero-section .hero-image-wrapper::before {
+      content: '';
+      position: absolute;
+      top: 16px;
+      bottom: 0;
+      left: 16px;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #CDEA68;
+      z-index: -1;
+      border-radius: 1rem;
+   }
+
+   .hero-section .hero-image-wrapper .hero-image {
+      border-radius: 1rem;
+      width: 100%;
+      box-shadow: 0 8 30px #A6A6A6;
    }
 
    .hero-section::after {
@@ -160,10 +188,43 @@ a {
    }
 
    .hero-section .hero-content .hero-button {
-      
+      background-color: #CDEA68;
+      color: #1a1a1a;
+      padding: 16px 40px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-right: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
    }
+
+   .hero-section .hero-content .hero-button:hover {
+      transform: translateY(-5px);
+      box-shadow: 1px 2px 13px 4px #cdea67;;
+   }
+
+   .hero-section .hero-content .hero-button:active {
+      transform: translateY(1px);
+      background-color: #bedb59;
+   }
+
    .hero-section .hero-content .hero-button-outline {
-      
+      background-color: transparent;
+      color: #A6A6A6;
+      padding: 14px 36px;
+      text-decoration: none;
+      border: 2px solid #A6A6A6;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+   }
+
+   .hero-section .hero-content .hero-button-outline:hover {
+      background-color: #fff;
+      color: #1a1a1a;
+      border-color: #fff;
    }
 
 /* ==============================================
