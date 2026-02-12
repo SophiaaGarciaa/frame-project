@@ -18,3 +18,4 @@ MC317450-152-LE:frame-project omareikr$
 gitinit
 git add .
 git commit -m "Initial Commit"
+git push
