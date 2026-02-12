@@ -45,3 +45,4 @@ Google Fonts (https://fonts.google.com/)
 Font Awesome CDN (https://cdnjs.com/libraries/font-awesome)
 Font Awesome Icons (https://fontawesome.com/)
 Free Stock Videos (https://pixabay.com/)
+>>>>>>> f3025e86936a9bf29eaab789c24beec53bb94ff7
