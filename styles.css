@@ -297,8 +297,37 @@ img {
 /* ==============================================
    ABOUT SECTION
    ============================================== */
+   .about-section {
+      background-color: #fff;
+   }
+   .about-section .about-heading {
+      font-family: 'Syne', Arial, sans-serif;
+      font-size: 1.6em;
+      font-weight: 800;
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      padding: 0 20px;
+   }
 
+   .about-section .about-heading .about-description {
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: #A6A6A6;
+      text-align: center;
+      margin-top: 8px;
+      font-family: 'Syne', Arial, sans-serif;
+   }
 
+   .about-section .about-heading .stats-row{
+      display: inline-block;
+   }
+
+   .about-section .about-heading .stats-row .stat-box {
+      margin: 0 20px;
+      text-align: center;
+      border: #0a0a0a;
+   }
 /* ==============================================
    ARTICLES SECTION
    ============================================== */
