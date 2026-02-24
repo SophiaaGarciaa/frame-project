@@ -595,7 +595,10 @@ img {
 /* ==============================================
    EDITOR'S PICKS SECTION
    ============================================== */
-
+   .picks-section {
+      padding: var(--section-padding);
+      background-color: var(--color-surface);
+   }
 
 /* ==============================================
    FAQ SECTION
