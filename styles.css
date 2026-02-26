@@ -84,6 +84,7 @@ html {
 }
 
 body {
+   padding-top: 4rem;
    font-family: var(--font-body);
    color: var(--color-text);
    font-size: var(--font-size-body);
@@ -142,7 +143,6 @@ img {
 }
 
 .page-header .main-nav {
-
    display: flex;
    gap: 20px;
    /* display: inline-block;
@@ -206,6 +206,41 @@ img {
    background-color: transparent;
    border-color: var(--main-color);
    color: var(--main-color);
+}
+/* Ham Menu */
+.ham-checkbox {
+   display: none;
+   /* visibility: hidden; */
+   /* opacity: 0;*/
+}
+
+.ham-btn {
+   display: none;
+   flex-direction: column;
+   gap: 5px;
+   cursor: pointer;
+   padding: 4px;
+}
+
+.ham-btn span {
+   display: block;
+   width: 24px;
+   height: 2px;
+   background-color: var(--color-background);
+   transition: all var(--transition-base);
+   transform-origin: center;
+}
+
+.ham-checkbox:checked ~ .ham-btn span:nth-child(1) {
+   transform: translateY(7px) rotate(45deg);
+}
+
+.ham-checkbox:checked ~ .ham-btn span:nth-child(2) {
+   opacity: 0;
+}
+
+.ham-checkbox:checked ~ .ham-btn span:nth-child(3) {
+   transform: translateY(-7px) rotate(-45deg);
 }
 
 /* ==============================================
@@ -558,16 +593,32 @@ img {
    .article-card-footer {
       display: flex;
       flex-direction: row;
-      padding: 12px 28px 20px;
+      padding: 20px 28px;
       border-top: 1px solid var(--color-border);
    }
    
    .article-meta {
       font-size: var(--font-size-meta);
       color: var(--color-text-secondary);
-      margin: var(--space-md);
+      margin-right: var(--space-md);
+   }
+   .articles-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--grid-gap-md);
+      max-width: var(--max-width-content);
+      margin: 0 auto;
+      text-align: center;
    }
 
+   .article-small {
+      margin: 0;
+      max-width: none;
+   }
+
+   .article-small .article-card-footer {
+      justify-content: center;
+   }
 /* ==============================================
    PODCAST SECTION
    ============================================== */
@@ -631,13 +682,20 @@ img {
       flex-direction: column;
       justify-content: space-between;
       gap: 3em;
-      padding: 160px 80px;
+      padding: 80px 20px;
    }
 
    .page-header .main-nav {
       /* flex-direction: column; */
    }
 
+   .about-section .stats-row, .articles-grid {
+      grid-template-columns: 1fr;
+   }
+   .hero-section .hero-content {
+      text-align: center;
+   }
+   .hero-buttons {justify-content: center;}
 }
 
 @media (max-width: 480px) {
