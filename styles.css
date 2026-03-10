@@ -775,6 +775,22 @@ img {
 
 .episode-row:last-child {border-bottom: none;}
 
+.episode-badge {
+   flex-shrink: 0;
+   text-align: center;
+   padding-top: 0;
+}
+
+.episode-badge-num {
+   font-family: var(--font-headings);
+   font-size: 1.8rem;
+   font-weight: 800;
+   color: var(--color-heading);
+   line-height: 0.5;
+}
+
+.episode-details {}
+
 /* ==============================================
    VIDEO SECTION
    ============================================== */
