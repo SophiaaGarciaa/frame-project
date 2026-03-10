@@ -762,6 +762,8 @@ img {
    overflow: hidden;
    text-align: left;
    animation: fadeInUp 0.6s ease both;
+   animation-timeline: view ();
+   animation-range: entry 0% cover 40%;
 }
 
 .episode-row {
@@ -772,6 +774,8 @@ img {
    border-bottom: 1px solid var(--color-border);
    background-color: var(--color-background-alt);
    animation: fadeInUp 0.6s ease both;
+   animation-timeline: view ();
+   animation-range: entry 0% cover 40%;
 }
 
 .episode-row:last-child {border-bottom: none;}
