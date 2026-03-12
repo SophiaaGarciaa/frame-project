@@ -931,6 +931,46 @@ img {
    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
 }
 
+.testimonal-stars {
+   color: var(--main-color);
+   font-size: 0.9rem;
+   margin-bottom: var(--space-md);
+   letter-spacing: 2px;
+}
+
+.testimonal-text {
+   font-style: italic;
+   font-size: 1.05rem;
+   color: hsl(75, 40%, 25%, 0.9);
+   line-height: 1.7;
+}
+
+.testimonal-author {
+   display: flex;
+   align-items: center;
+   gap: var(--grid-gap-sm);
+   margin-top: 1.3rem;
+}
+
+.testimonal-avatar {
+   width: 2.5rem;
+   height: 2.5rem;
+   border-radius: 50%;
+}
+
+.testimonal-name {
+   font-family: var(--font-headings);
+   font-size: 0.85rem;
+   font-weight: 600;
+   color: var(--color-heading);
+   font-style: normal;
+}
+
+.testimonal-role {
+   font-size: var(--font-size-label);
+   color: rgba(77, 107, 21, 0.6);
+   margin-top: 2px;
+}
 /* ==============================================
    EDITOR'S PICKS SECTION
    ============================================== */
