@@ -844,6 +844,30 @@ img {
    background-color: var(--color-background);
    text-align: left;
    box-shadow: var(--shadow-card);
+   }
+
+.video-card:nth-child(1) {
+   animation: zoomIN 0.6s ease both;
+   animation-timeline: view ();
+   animation-range: entry 0% cover 40%;
+}
+
+.video-card:nth-child(2) {
+   animation: zoomIN 0.6s ease 0.2s both;
+   animation-timeline: view ();
+   animation-range: entry 0% cover 40%;
+}
+
+.video-card:nth-child(3) {
+   animation: zoomIN 0.6s ease 0.4s both;
+   animation-timeline: view ();
+   animation-range: entry 0% cover 40%;
+}
+
+.video-card:nth-child(4) {
+   animation: zoomIN 0.6s ease 0.6s both;
+   animation-timeline: view ();
+   animation-range: entry 0% cover 40%;
 }
 
 .video-featured {
@@ -868,6 +892,17 @@ img {
    font-weight: 300;
    color: rgba(0, 0, 0, 0.6);
    line-height: 1.7;
+}
+
+@keyframes zoomIn {
+   from {
+      opacity: 0;
+      transform: scale(0.8);
+   }
+   to {
+      opacity: 1;
+      transform: scale(1);
+   }
 }
 
 /* ==============================================
