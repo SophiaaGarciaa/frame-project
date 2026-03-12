@@ -909,8 +909,26 @@ img {
    TESTIMONIALS SECTION
    ============================================== */
 .testimonial-section {
+   background-color: radial-gradient(ellipse at center, #d4e680, #e8f0b8);
    padding: var(--section-padding);
-   background-color: #f1ffbf;
+   text-align: center;
+}
+
+.testimonial-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(270px, 3fr));
+   gap:var(--grid-gap-md);
+   max-width: var(--max-width-wide);
+   margin: 0 auto;
+}
+
+.testimonal-card {
+   background-color: var(--color-background);
+   border: 1px solid var(--color-border);
+   border-radius: var(--radius-lg);
+   padding: 1.8rem 1.5rem;
+   text-align: left;
+   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
 }
 
 /* ==============================================
