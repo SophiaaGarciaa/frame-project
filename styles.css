@@ -1,73 +1,73 @@
 /* ==============================================
    CSS Variables
    ============================================== */
-:root {
-   /* Brand Color */
-   --main-color: #CDEA68;
-   --main-color-dark: #4d6b15;
-   --color-light-gray: #A1a1a1;
-   --color-heading: #1a1a1a;
-   --color-background-dark: #0a0a0a;
-   --color-text: #2d2d2d;
-   --color-background: #ffffff;
-   --color-background-alt: #fafafa;
-   --color-surface: #f5f5f5;
-   --color-border: #e5e5e5;
-   --color-text-secondary: #666666;
-   --color-text-muted: #999999;
+   :root {
+      /* Brand Color */
+      --main-color: #CDEA68;
+      --main-color-dark: #4d6b15;
+      --color-light-gray: #A1a1a1;
+      --color-heading: #1a1a1a;
+      --color-background-dark: #0a0a0a;
+      --color-text: #2d2d2d;
+      --color-background: #ffffff;
+      --color-background-alt: #fafafa;
+      --color-surface: #f5f5f5;
+      --color-border: #e5e5e5;
+      --color-text-secondary: #666666;
+      --color-text-muted: #999999;
 
-   /* Typograhy */
-   --font-headings: 'Syne', Arial, sans-serif;
-   --font-body: 'Inter', Arial, sans-serif;
+      /* Typograhy */
+      --font-headings: 'Syne', Arial, sans-serif;
+      --font-body:'Inter', Arial, sans-serif;
 
-   /* Font Sizes */
-   --font-size-hero: clamp(2rem, 5vw + 1rem, 3.5rem);
-   --font-size-section-lg: clamp(1.75rem, 4vw + 0.5rem, 2.5rem);
-   --font-size-section: clamp(1.5rem, 3vw + 0.5rem, 2rem);
-   --font-size-card-title: clamp(1.1rem, 2vw + 0.5rem, 1.35rem);
-   --font-size-body: clamp(0.9rem, 1vw + 0.5rem, 1rem);
-   --font-size-small: clamp(0.85rem, 1vw + 0.5rem, 0.95rem);
-   --font-size-label: 0.7rem;
-   --font-size-meta: 0.75rem;
+      /* Font Sizes */
+      --font-size-hero: clamp(2rem, 5vw + 1rem, 3.5rem);
+      --font-size-section-lg: clamp(1.75rem, 4vw + 0.5rem, 2.5rem);
+      --font-size-section: clamp(1.5rem, 3vw + 0.5rem, 2rem);
+      --font-size-card-title: clamp(1.1rem, 2vw + 0.5rem, 1.35rem);
+      --font-size-body: clamp(0.9rem, 1vw + 0.5rem, 1rem);
+      --font-size-small: clamp(0.85rem, 1vw + 0.5rem, 0.95rem);
+      --font-size-label: 0.7rem; 
+      --font-size-meta: 0.75rem;
 
-   /* Spacing */
-   --space-xs: 8px;
-   --space-sm: 12px;
-   --space-md: 16px;
-   --space-lg: 24px;
-   --space-xl: 40px;
-   --space-2xl: 80px;
+      /* Spacing */
+      --space-xs: 8px;
+      --space-sm: 12px;
+      --space-md: 16px;
+      --space-lg: 24px;
+      --space-xl: 40px;
+      --space-2xl: 80px;
 
-   /* Section Padding */
-   --section-padding: 80px 20px;
-   --hero-padding: 160px 80px;
+      /* Section Padding */
+      --section-padding: 80px 20px;
+      --hero-padding: 160px 80px;
 
-   /* Border Radius */
-   --radius-sm: 4px;
-   --radius-md: 12px;
-   --radius-lg: 16px;
-   --radius-pill: 30px;
+      /* Border Radius */
+      --radius-sm: 4px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-pill: 30px;
 
-   /* Shadows */
-   --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.08);
-   --shadow-card-sm: 0 2px 12px rgba(0, 0, 0, 0.06);
-   --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.01);
+      /* Shadows */
+      --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.08);
+      --shadow-card-sm: 0 2px 12px rgba(0, 0, 0, 0.06);
+      --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.01);
 
-   /* Transitions */
-   --transition-fast: 0.2s ease;
-   --transition-base: 0.3s ease;
-   --transition-slow: 0.4s ease;
+      /* Transitions */
+      --transition-fast: 0.2s ease;
+      --transition-base: 0.3s ease;
+      --transition-slow: 0.4s ease;
 
-   /* Layout Max Widths */
-   --max-width-narrow: 700px;
-   --max-width-content: 800px;
-   --max-width-wide: 1000px;
+      /* Layout Max Widths */
+      --max-width-narrow: 700px;
+      --max-width-content: 800px;
+      --max-width-wide: 1000px;
 
-   /* Grid Gap Values */
-   --grid-gap-sm: 16px;
-   --grid-gap-md: 24px;
-   --grid-gap-lg: 32px;
-}
+      /* Grid Gap Values */
+      --grid-gap-sm: 16px;
+      --grid-gap-md: 24px;
+      --grid-gap-lg: 32px;
+   }
 
 /* ==============================================
    RESET & BASE STYLES
@@ -143,6 +143,7 @@ img {
 }
 
 .page-header .main-nav {
+
    display: flex;
    gap: 20px;
    /* display: inline-block;
@@ -151,7 +152,7 @@ img {
 }
 
 .page-header .main-nav .nav-link {
-   text-decoration: none;
+   text-decoration: none;   
    position: relative;
    /* margin: 0 12px; */
    color: var(--color-text-muted);
@@ -194,7 +195,7 @@ img {
 }
 
 .nav-dropdown:hover .nav-arrow {
-   transform: rotate(180deg)
+   transform: rotate(180deg);
 }
 
 .dropdown-menu {
@@ -215,6 +216,12 @@ img {
                transform var(--transition-base);
 }
 
+.nav-dropdown:hover .dropdown-menu {
+   opacity: 1;
+   visibility: visible;
+   transform: translateY(0);
+}
+
 .dropdown-link {
    display: flex;
    align-items: center;
@@ -224,17 +231,12 @@ img {
    color: var(--color-text-muted);
    font-size: 0.82rem;
    transition: color var(--transition-fast),
-               paddding-left var(--transition-fast);
+               padding-left var(--transition-fast);
 }
 
 .dropdown-link:hover {
    color: var(--main-color);
    padding-left: 1.75rem;
-}
-
-.dropdown-link:hover .dropdown-menu {
-   opacity: 1;
-   visibility: visible;
 }
 
 .page-header .nav-cta {
@@ -248,8 +250,8 @@ img {
    font-weight: 600;
    font-size: 0.85rem;
    border-radius: 20px;
-   transition: all var(--transition-base);
    animation: heartbeat 1.5s ease-in-out infinite;
+   transition: all var(--transition-base);
 }
 
 @keyframes heartbeat {
@@ -274,7 +276,7 @@ img {
 .ham-checkbox {
    display: none;
    /* visibility: hidden; */
-   /* opacity: 0;*/
+   /* opacity: 0; */
 }
 
 .ham-btn {
@@ -294,17 +296,18 @@ img {
    transform-origin: center;
 }
 
-.ham-checkbox:checked~.ham-btn span:nth-child(1) {
+.ham-checkbox:checked ~ .ham-btn span:nth-child(1) {
    transform: translateY(7px) rotate(45deg);
 }
 
-.ham-checkbox:checked~.ham-btn span:nth-child(2) {
+.ham-checkbox:checked ~ .ham-btn span:nth-child(2) {
    opacity: 0;
 }
 
-.ham-checkbox:checked~.ham-btn span:nth-child(3) {
+.ham-checkbox:checked ~ .ham-btn span:nth-child(3) {
    transform: translateY(-7px) rotate(-45deg);
 }
+
 
 /* ==============================================
    HERO SECTION
