@@ -1002,29 +1002,32 @@ img {
 
 
  /* ==============================================
-   CSS ANIMATIONS AREA
+   CSS ANIMATIONS
    ============================================== */
-@keyframes fadeInUp {
-   from {
-      opacity: 0;
-      transform: translateY(30px);
+   @keyframes fadeInUp {
+      from {
+         opacity: 0;
+         transform: translateY(30px);
+      }
+      to {
+         opacity: 1;
+         transform: translateY(0);
+      }
    }
-   to {
-      opacity: 1;
-      transform: translateY(0);
-   }
-}
 /* ==============================================
    MEDIA QUERIES
    ============================================== */
 /* DESKTOP FIRST */
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+   
+}
 
 @media (max-width: 768px) {
-   /* Show Hamburger, hide desktop nav */
+   /* Show hamburger, hide desktop nav */
    .ham-btn {
       display: flex;
    }
+
    .main-nav {
       display: none !important;
       flex-direction: column;
@@ -1042,12 +1045,13 @@ img {
    }
 
    .nav-cta {
-      width: 100%;
-      order: 4;
       display: block;
       text-align: center;
       margin-top: var(--space-md);
+      width: 100%;
+      order: 4;
    }
+
 
    .hero-section {
       flex-direction: column;
@@ -1055,7 +1059,6 @@ img {
       gap: 3em;
       padding: 80px 20px;
    }
-
    .page-header .main-nav {
       /* flex-direction: column; */
    }
@@ -1064,16 +1067,14 @@ img {
       text-align: center;
    }
 
-   .hero-buttons {
-      justify-content: center;
-   }
+   .hero-buttons {justify-content: center;}
 
    .about-section .stats-row,
    .articles-grid {
       grid-template-columns: 1fr;
    }
 
-
+   
 }
 
 @media (max-width: 480px) {
@@ -1082,13 +1083,25 @@ img {
    }
 }
 
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+   
+}
 
 /* MOBILE FIRST */
-@media (min-width: 480px) {}
+/* 
+@media (min-width: 480px) {
+   
+}
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+   
+}
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+   
+}
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+   
+} 
+*/
