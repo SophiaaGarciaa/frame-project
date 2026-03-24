@@ -77,9 +77,9 @@
     <main>
 
         <!-- HERO -->
-        <section class="hero-section">
+        <section class="hero-section" role="Hero banner">
             <!-- Background Video -->
-            <video class="hero-video" autoplay muted loop playsinline>
+            <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
                 <source src="assets/videos/hero-video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
@@ -517,15 +517,15 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="page-footer">
+    <footer class="page-footer" role="contactinfo">
         <div class="footer-columns">
             <div class="footer-col">
-                <p class="footer-brand">FRAME</p>
+                <p class="footer-brand"><i class="fa-solid fa-camera" aria-hidden="true"></i>FRAME</p>
                 <p class="footer-tagline">Visual stories. Bold perspectives.</p>
             </div>
             <div class="footer-col">
                 <p class="footer-col-title">Explore</p>
-                <nav class="footer-nav">
+                <nav class="footer-nav" aria-label="Explore links">
                     <a href="#" class="footer-link">Stories</a>
                     <a href="#" class="footer-link">Blog</a>
                     <a href="#" class="footer-link">Podcast</a>
@@ -534,7 +534,7 @@
             </div>
             <div class="footer-col">
                 <p class="footer-col-title">Company</p>
-                <nav class="footer-nav">
+                <nav class="footer-nav" aria-label="Company links">
                     <a href="#" class="footer-link">About</a>
                     <a href="#" class="footer-link">Videos</a>
                     <a href="#" class="footer-link">Contact</a>
@@ -552,7 +552,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p class="footer-copy">&copy; 2026 FRAME Magazine. Built by CMI-3315-002 Web Designers</p>
+            <p class="footer-copy">&copy; 2026 FRAME Magazine. Built by CMI-3315-002 Web Designers <i class="fa-solid fa code" aria-hidden="true"></i> </p>
         </div>
     </footer>
 
