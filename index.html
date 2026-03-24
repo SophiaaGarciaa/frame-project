@@ -43,20 +43,20 @@
 <body>
 
     <!-- HEADER -->
-    <header class="page-header">
-        <span class="nav-logo"><i class="fa-solid fa-camera"></i> frame</span>
+    <header class="page-header" role="banner">
+        <span class="nav-logo"><i class="fa-solid fa-camera" aria-hidden="true"></i> frame</span>
 
         <input type="checkbox" id="ham-toggle" class="ham-checkbox">
-        <label for="ham-toggle" class="ham-btn">
+        <label for="ham-toggle" class="ham-btn" aria-label="Toggle navigation menu">
             <span></span>
             <span></span>
             <span></span>
         </label>
 
-        <nav class="main-nav">
-            <a href="#" class="nav-link active">Home</a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="#" class="nav-link active" aria-current="page">Home</a>
             <div>
-            <a href="#" class="nav-link">Stories<i class="fa-solid fa-chevron-down nav-arrow"></i> </a>
+            <a href="#" class="nav-link" aria-haspopup="true" aria-expanded="false">Stories<i class="fa-solid fa-chevron-down nav-arrow" aria-hidden="true"></i> </a>
             </div>
             <div class="dropdown-menu">
                 <a href="#" class="dropdown-link">Photography</a>
