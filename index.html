@@ -261,10 +261,10 @@
         </section>
 
         <!-- VIDEO -->
-        <section id="watch" class="video-section">
+        <section id="watch" class="video-section" aria-labelledby="video-heading">
             <div class="section-intro">
                 <p class="section-label"><i class="fa-solid fa-video"></i> Behind the Lens</p>
-                <h2 class="section-heading">Watch</h2>
+                <h2 class="section-heading" id="video-heading">Watch</h2>
             </div>
 
             <div class="video-grid">
@@ -272,7 +272,7 @@
                 <div class="video-featured">
                     <div class="video-card">
                         <video class="feature-video" controls preload="metadata"
-                            poster="https://picsum.photos/seed/frame-video/800/450">
+                            poster="https://picsum.photos/seed/frame-video/800/450" aria-label="How We Shoot: Golden Hour Series">
                             <source src="assets/videos/behind-the-lens.mp4" type="video/mp4">
                             Your browser does not support the video element.
                         </video>
@@ -284,7 +284,7 @@
                     </div>
                     <div class="video-card">
                         <video class="feature-video" controls preload="metadata"
-                            poster="https://picsum.photos/seed/frame-color/800/450">
+                            poster="https://picsum.photos/seed/frame-color/800/450" aria-label="Color Grading Secrets: Setting the Mood">
                             <source src="assets/videos/color-grading.mp4" type="video/mp4">
                             Your browser does not support the video element.
                         </video>
@@ -332,10 +332,10 @@
         </section>
 
         <!-- TESTIMONIALS -->
-        <section class="testimonial-section">
+        <section class="testimonial-section" aria-labelledby="testimonial-heading">
             <div class="section-intro">
                 <p class="section-label"><i class="fa-solid fa-quote-left"></i> Testimonials</p>
-                <h2 class="section-heading">What Creators Say</h2>
+                <h2 class="section-heading" id="testimonial-heading">What Creators Say</h2>
             </div>
             <div class="testimonial-grid">
                 <div class="testimonial-card">
@@ -351,7 +351,13 @@
                     </div>
                 </div>
                 <div class="testimonial-card">
-                    <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                    </div>
                     <blockquote class="testimonial-text">"Good design is invisible. Great design is unforgettable. The
                         difference is the courage to strip everything away until only truth remains."</blockquote>
                     <div class="testimonial-author">
@@ -363,7 +369,13 @@
                     </div>
                 </div>
                 <div class="testimonial-card">
-                    <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <div class="testimonial-stars" role="img" aria-label="5 out of 5 stars">
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star" aria-hidden="true"></i>
+                        <i class="fa-solid fa-star"aria-hidden="true"></i>
+                    </div>
                     <blockquote class="testimonial-text">"The best documentaries make you forget the camera is there.
                         Real stories need real patience — and the courage to let silence speak."</blockquote>
                     <div class="testimonial-author">
@@ -378,10 +390,10 @@
         </section>
 
         <!-- EDITOR'S PICKS -->
-        <section id="picks" class="picks-section">
+        <section id="picks" class="picks-section" aria-labelledby="picks-heading">
             <div class="picks-header">
                 <p class="section-label"><i class="fa-solid fa-pen-fancy"></i> Editor's Picks</p>
-                <h2 class="section-heading">What We're Reading</h2>
+                <h2 class="section-heading" id="picks-heading">What We're Reading</h2>
             </div>
             <div class="picks-grid">
 
@@ -438,10 +450,10 @@
         </section>
 
         <!-- FAQ -->
-        <section class="faq-wrapper">
+        <section class="faq-wrapper" aria-labelledby="faq-heading">
             <div class="section-intro">
                 <p class="section-label">FAQ</p>
-                <h2 class="section-heading">Frequently Asked Questions</h2>
+                <h2 class="section-heading" id="faq-heading">Frequently Asked Questions</h2>
             </div>
             <div class="faq-list">
                 <details class="faq-item">
@@ -500,14 +512,14 @@
                 <div class="contact-form-wrapper">
                     <form class="contact-form">
                         <label class="form-label" for="contact-name">Your Name</label>
-                        <input type="text" id="contact-name" class="form-input" placeholder="Enter your name">
+                        <input type="text" id="contact-name" class="form-input" placeholder="Enter your name" required autocomplete="name">
                         <label class="form-label" for="contact-email">Email Address</label>
-                        <input type="email" id="contact-email" class="form-input" placeholder="Enter your email">
+                        <input type="email" id="contact-email" class="form-input" placeholder="Enter your email" required autocomplete="email">
                         <label class="form-label" for="contact-file">Attach a File (Optional)</label>
                         <input type="file" id="contact-file" class="form-input" placeholder="Attach a file (optional)">
                         <label class="form-label" for="contact-message">Your Message</label>
                         <textarea id="contact-message" class="form-textarea"
-                            placeholder="Tell us what's on your mind..." rows="5"></textarea>
+                            placeholder="Tell us what's on your mind..." rows="5" required aria-required="true"></textarea>
                         <button type="submit" class="form-button">Send Message</button>
                     </form>
                 </div>
