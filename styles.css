@@ -102,6 +102,7 @@ h6 {
 
 a {
    color: inherit;
+   text-decoration: none;
 }
 
 img {
@@ -109,6 +110,45 @@ img {
    height: auto;
    display: block;
 }
+
+button,
+input,
+select,
+textarea {
+   font: inherit;
+}
+
+button {
+   cursor: pointer;
+   border: none;
+   background: none;
+}
+
+/* ==============================================
+   ACCESSIBILITY
+   ============================================== */
+   *:focus {
+      outline: none;
+   }
+
+   *:focus-visible {
+      outline: 1px solid var(--main-color);
+      outline-offset: 3px;
+      border-radius: 4px;
+   }
+
+   @media (prefers-reduced-motion: reduce) {
+      *,
+      *::after,
+      *::before {
+         animation-duration: 0.01ms !important;
+         animation-iteration-count: 1 !important;
+         transition-duration: 0.01ms !important;
+         scroll-behavior: auto !important;
+         animation-timeline: unset !important;
+         animation-range: unset !important;
+      }
+   }
 
 /* ==============================================
    HEADER AREA
