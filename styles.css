@@ -1300,6 +1300,46 @@ details[open] .faq-question:after {
 /* ==============================================
    CTA SECTION
    ============================================== */
+   .cta-section {
+      background-image: url(assets/images/);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+   }
+
+   .cta-overlay {
+      padding: 120px 40px;
+      background-color: rgba(10, 10, 10, 0.8);
+      text-align: center;
+   }
+
+   .cta-title {
+      font-size: var(--font-size-section);
+      font-weight: 800;
+      color: var(--color-background);
+      margin-bottom: var(--space-md);
+      line-height: 1.2;
+   }
+
+   .cta-text {
+      font-size: 1.05rem;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.9);
+      line-height: 1.7;
+      margin-bottom: 32px;
+   }
+
+   .cta-button {
+      display: inline-block;
+      background-color: var(--main-color);
+      color: var(--color-heading);
+      padding: 16px 40px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: transform var(--transition-base), box-shadow var(--transition-base);
+   }
 
 
 /* ==============================================
