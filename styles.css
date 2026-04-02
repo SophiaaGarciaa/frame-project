@@ -1382,11 +1382,11 @@ details[open] .faq-question:after {
    .contact-image {
       width: 100%;
       border-radius: var(--radius-lg);
-      object-fit: cover;
-      object-position: center;
    }
 
    .contact-form-wrapper {
+      flex: 1;
+      align-self: flex-end;
    }
 
    .contact-form {
@@ -1394,9 +1394,21 @@ details[open] .faq-question:after {
 
    .form-label {
       display: block;
-      font-size: var(--font-size-meta);
-      color: var(--color-background-dark);
+      font-size: 0.85rem;
+      font-family: var(--font-heading);
+      font-weight: 600;
+      color: var(--color-heading);
       margin-bottom: var(--space-xs);
+   }
+
+   .form-input, .form-textarea {
+      border-radius: var(--radius-md);
+      border: 1px solid var(--color-border);
+      padding: 14px 16px;
+      margin-bottom: 20px;
+      width: 100%;
+      display: block;
+      font-family: var(--font-body);
    }
 
 /* ==============================================
