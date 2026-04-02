@@ -1327,25 +1327,77 @@ details[open] .faq-question:after {
       line-height: 1.7;
       margin: 0 auto;
       max-width: 500px;
+      margin-bottom: 35px;
    }
 
    .cta-button {
       display: inline-block;
       background-color: var(--main-color);
       color: var(--color-heading);
-      padding: 16px 40px;
+      padding: 1rem 2.5rem;
       text-decoration: none;
-      border-radius: 30px;
-      font-size: 1rem;
+      border-radius: var(--radius-pill);
+      font-size: var(--font-size-body);
       font-weight: 600;
-      transition: transform var(--transition-base), box-shadow var(--transition-base);
+      transition: transform var(--transition-base),
+                  box-shadow var(--transition-base);
+   }
+
+   .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 25px rgba(205, 234, 104, 0.5);
    }
 
 
 /* ==============================================
    CONTACT SECTION 
    ============================================== */
+   .contact-section {
+      padding: var(--section-padding);
+      background-color: var(--main-color);
+   }
+   
+   .contact-container {
+      display: flex;
+      gap: 5%;
+      min-width: var(--max-width-wide);
+      margin: 0 auto;
+   }
 
+   .contact-heading {
+      font-size: var(--font-size-section-lg);
+      font-weight: 800;
+      color: var(--font-heading);
+      margin-bottom: var(--space-md);
+   }
+
+   .contact-desc {
+      font-size: var(--font-size-body);
+      color: var(--color-background-dark);
+      line-height: 1.7;
+      font-weight: 300;
+      margin-bottom: var(--space-lg);
+   }
+
+   .contact-image {
+      width: 100%;
+      border-radius: var(--radius-lg);
+      object-fit: cover;
+      object-position: center;
+   }
+
+   .contact-form-wrapper {
+   }
+
+   .contact-form {
+   }
+
+   .form-label {
+      display: block;
+      font-size: var(--font-size-meta);
+      color: var(--color-background-dark);
+      margin-bottom: var(--space-xs);
+   }
 
 /* ==============================================
    FOOTER AREA
