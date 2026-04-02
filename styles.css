@@ -1322,11 +1322,11 @@ details[open] .faq-question:after {
    }
 
    .cta-text {
-      font-size: 1.05rem;
       font-weight: 300;
-      color: rgba(255, 255, 255, 0.9);
+      color: rgba(255, 255, 255, 0.07);
       line-height: 1.7;
-      margin-bottom: 32px;
+      margin: 0 auto;
+      max-width: 500px;
    }
 
    .cta-button {
