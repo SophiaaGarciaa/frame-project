@@ -1387,9 +1387,14 @@ details[open] .faq-question:after {
    .contact-form-wrapper {
       flex: 1;
       align-self: flex-end;
+      animation: revealFromRight 0.8s ease 0.15s both;
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%;
    }
 
-   .contact-form {
+   .contact-info {
+      flex:1;
+      animation: revealFromLeft 0.8 ease 0.15s both;
    }
 
    .form-label {
@@ -1460,13 +1465,21 @@ details[open] .faq-question:after {
    ============================================== */
    .page-footer {
       background-color: var(--color-background-dark);
-      padding: var(--space-lg) 20px;
+      padding: var(--section-padding) 20px;
    }
 
    .footer-column {
    }
 
-   .footer-col {
+   .footer-col title {
+   }
+
+   .footer-link {
+
+   }
+
+   .footer-bottom {
+
    }
 
    .footer-brand {
