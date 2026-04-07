@@ -1465,29 +1465,58 @@ details[open] .faq-question:after {
    ============================================== */
    .page-footer {
       background-color: var(--color-background-dark);
-      padding: var(--section-padding) 20px;
+      padding: 60px 40px 30px;
+      color: var(--color-background)
    }
 
-   .footer-column {
-   }
-
-   .footer-col title {
-   }
-
-   .footer-link {
-
-   }
-
-   .footer-bottom {
-
+   .footer-columns {
+      display: grid;
+      grid-template-columns: 2fr repeat(3, 1fr);
+      gap: var(--grid-gap-md);
+      margin: 0 auto 40px;
+      max-width: var(--max-width-wide);
    }
 
    .footer-brand {
       font-family: var(--font-heading);
-      font-size: 1.25rem;
-      font-weight: 800;
-      color: var(--color-surface);
+      font-size: 1.3rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: var(--space-sm);
    }
+
+   .footer-tagline {
+      font-size:0.8rem;
+      color: var(--main-color);
+   }
+
+   .footer-col-title {
+      font-size: var(--font-size-small);
+      text-transform: uppercase;
+      font-weight: 700;
+      font-family: var(--font-heading);
+      margin-bottom: 10px;
+   }
+
+   .footer-link {
+      display: block;
+      color: var(--color-light-gray);
+      line-height: 1.7;
+      margin-bottom: 12px;
+      color: rgba(225, 225, 225, 0.7);
+      transition: padding-left var(--transition-base), color var(--transition-base);
+   }
+
+   .footer-link:hover {
+      padding-left: 8px;
+      color: var(--main-color);
+   }
+
+   .footer-socials {
+      display: flex;
+      gap: 10px;
+   }
+
 
    /* ==============================================
    CSS ANIMATIONS
