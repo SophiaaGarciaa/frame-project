@@ -1351,115 +1351,98 @@ details[open] .faq-question:after {
 
 /* ==============================================
    CONTACT SECTION 
-   ============================================== */
-   .contact-section {
-      padding: var(--section-padding);
-      background-color: var(--main-color);
-   }
-   
-   .contact-container {
-      display: flex;
-      gap: 5%;
-      min-width: var(--max-width-wide);
-      margin: 0 auto;
-   }
+============================================== */
+.contact-section {
+   background-color: var(--main-color);
+   padding: 80px 40px;
+}
 
-   .contact-heading {
-      font-size: var(--font-size-section-lg);
-      font-weight: 800;
-      color: var(--font-heading);
-      margin-bottom: var(--space-md);
-   }
+.contact-container {
+   display: flex;
+   gap: 5%;
+   max-width: var(--max-width-wide);
+   margin: 0 auto;
+}
 
-   .contact-desc {
-      font-size: var(--font-size-body);
-      color: var(--color-background-dark);
-      line-height: 1.7;
-      font-weight: 300;
-      margin-bottom: var(--space-lg);
-   }
+.contact-info {
+   flex: 1;
+   animation: revealFromLeft 0.8s ease both;
+   animation-timeline: view();
+   animation-range: entry 0% cover 40%;
+}
 
-   .contact-image {
-      width: 100%;
-      border-radius: var(--radius-lg);
-   }
+.section-label {
 
-   .contact-form-wrapper {
-      flex: 1;
-      align-self: flex-end;
-      animation: revealFromRight 0.8s ease 0.15s both;
-      animation-timeline: view();
-      animation-range: entry 0% cover 40%;
-   }
+}
 
-   .contact-info {
-      flex:1;
-      animation: revealFromLeft 0.8 ease 0.15s both;
-   }
+.contact-heading {
+   font-size: var(--font-size-section-lg);
+   font-weight: 800;
+   color: var(--font-heading);
+   margin-bottom: var(--space-lg);
+}
 
-   .form-label {
-      display: block;
-      font-size: 0.85rem;
-      font-family: var(--font-heading);
-      font-weight: 600;
-      color: var(--color-heading);
-      margin-bottom: var(--space-xs);
-   }
+.contact-desc {
+   font-size: var(--font-size-body);
+   line-height: 1.7;
+   font-weight: 300;
+   color: var(--color-background-dark);
+   margin-bottom: var(--space-lg);
+}
 
-   .form-input, .form-textarea {
-      border-radius: var(--radius-md);
-      border: 1px solid var(--color-border);
-      background-color: var(--color-background);
-      padding: 14px 16px;
-      margin-bottom: 20px;
-      width: 100%;
-      display: block;
-      font-family: var(--font-body);
-   }
+.contact-image {
+   width: 100%;
+   border-radius: var(--radius-lg);
+}
 
-   .form-button {
-      background-color: var(--color-heading);
-      color: var(--main-color);
-      padding: 0.625rem 2.25rem;
-      text-decoration: none;
-      border-radius: var(--radius-pill);
-      transition: background-color var(--transition-base),
-                  color var(--transition-base);
-      font-family: var(--font-heading);
-      font-size: var(--font-size-body);
-      font-weight: 600;
-   }
+.contact-form-wrapper {
+   flex: 1;
+   align-self: flex-end;
+   animation: revealFromRight 0.8s ease 0.15s both;
+   animation-timeline: view();
+   animation-range: entry 0% cover 40%;
+}
 
-   .form-button:hover {
-      background-color: var(--main-color-dark);
-      color: var(--color-background);
-   }
+.form-label {
+   display: block;
+   font-size: 0.85rem;
+   font-family: var(--font-heading);
+   font-weight: 600;
+   color: var(--color-heading);
+   margin-bottom: var(--space-xs);
+}
 
-   @keyframes revealFromLeft {
-      from {
-         opacity: 0;
-         transform: translateX(-60px), scale(0.95);
-         filter: blur(2px);
-      }
-      to {
-         opacity: 1;
-         transform: translateX(0), scale(1);
-         filter: blur(0);
-      }
-   }
+.form-input,
+.form-textarea {
+   padding: 14px 16px;
+   margin-bottom: 20px;
+   background-color: var(--color-background);
+   border: 1px solid var(--color-border);
+   border-radius: var(--radius-md);
+   width: 100%;
+   display: block;
+   font-family: var(--font-body);
+}
 
-   @keyframes revealFromRight {
-      from {
-         opacity: 0;
-         transform: translateX(60px), scale(0.95);
-         filter: blur(2px);
-      }
-      to {
-         opacity: 1;
-         transform: translateX(0), scale(1);
-         filter: blur(0);
-      }
-   }
+.form-button {
+   background-color: var(--color-background-dark);
+   color: var(--main-color);
+   padding: 0.625rem 2.25rem;
+   border-radius: var(--radius-pill);
+   border: none;
+   font-family: var(--font-heading);
+   font-size: var(--font-body);
+   font-weight: 600;
+   cursor: pointer;
+   transition: background-color var(--transition-base),
+               color var(--transition-base);
+}
+
+.form-button:hover {
+   background-color: var(--main-color-dark);
+   color: var(--color-background);
+}
+
 /* ==============================================
    FOOTER AREA
    ============================================== */
@@ -1544,6 +1527,16 @@ details[open] .faq-question:after {
 
    .back-to-top {
       position: fixed;
+      bottom: 5%;
+      right: 5%;
+      color: var(--main-color);
+      background-color: var(--color-background-dark);
+      width: 44px;
+      height: 44px;
+      border: 2px solid var(--main-color);
+      border-radius: 50%;
+      text-align: center;
+      line-height: 44px;
    }
 
 
@@ -1558,6 +1551,32 @@ details[open] .faq-question:after {
       to {
          opacity: 1;
          transform: translateY(0);
+      }
+   }
+
+   @keyframes revealFromLeft {
+      from {
+         opacity: 0;
+         transform: translateX(-60px), scale(0.95);
+         filter: blur(2px);
+      }
+      to {
+         opacity: 1;
+         transform: translateX(0), scale(1);
+         filter: blur(0);
+      }
+   }
+
+   @keyframes revealFromRight {
+      from {
+         opacity: 0;
+         transform: translateX(60px), scale(0.95);
+         filter: blur(2px);
+      }
+      to {
+         opacity: 1;
+         transform: translateX(0), scale(1);
+         filter: blur(0);
       }
    }
 /* ==============================================
