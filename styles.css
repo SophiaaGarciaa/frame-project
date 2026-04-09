@@ -1542,6 +1542,10 @@ details[open] .faq-question:after {
       font-size: var(--font-size-meta);
    }
 
+   .back-to-top {
+      position: fixed;
+   }
+
 
    /* ==============================================
    CSS ANIMATIONS
